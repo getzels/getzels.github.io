@@ -7,7 +7,7 @@ function currentDate() {
     var month = months[now.getMonth()];
 
     var n = days[d.getDay()];
-    return document.write(day + ", " + d.getDate + " " + month + " " + d.getFullYear);
+    document.getElementById("currentDate").innerHTML = day + ", " + d.getDate + " " + month + " " + d.getFullYear;
 }
 
 function showMenu() {
