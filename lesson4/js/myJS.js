@@ -9,6 +9,11 @@ function currentDate() {
     document.getElementById("currentdate").innerHTML = day + ", " + now.getDate() + " " + month + " " + now.getFullYear();
 }
 
+function currentYear() {
+    
+    return document.write(new Date().getFullYear());
+}
+
 function showMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }

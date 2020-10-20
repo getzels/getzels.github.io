@@ -5,6 +5,7 @@
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
   text-align: center;
+  margin: 0px;
 }
 
 /* Style the header */
@@ -101,4 +102,9 @@ header img {
   display: table;
   clear: both;
   text-align: center;
+}
+
+.homeimagen{
+  width:250px;
+  height:300px;
 }

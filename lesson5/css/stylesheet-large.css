@@ -1,0 +1,59 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 64.063em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex   : 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #50514F;
+    padding         : 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;;
+    color     : white;
+    width     : 1024px;
+  }
+
+  main {
+    width       : 1024px;
+    margin-left : auto;
+    margin-right: auto;
+    text-align  : center
+  }
+}
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+  header img {
+    width: 100%;
+  }
+
+  .headings h1 {
+    font-size: 3rem;
+  }
+
+  .motto {
+    font-style    : italic;
+    letter-spacing: 1pt;
+    color         : #247BA0;
+    margin-left   : 20px;
+    font-size     : 2rem;
+
+  }
+
+}
