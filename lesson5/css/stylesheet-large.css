@@ -35,6 +35,17 @@
     margin-right: auto;
     text-align  : center
   }
+
+  .homeimagen{
+    width:250px;
+    height:300px;
+  }
+  .navigation li a.active {
+    background-color: yellow;
+  }
+  .active, li :hover {
+    background-color: yellow;
+  }
 }
 
 /* Larger viewports */
@@ -54,6 +65,17 @@
     margin-left   : 20px;
     font-size     : 2rem;
 
+  }
+
+  .homeimagen{
+    width:250px;
+    height:300px;
+  }
+  .navigation li a.active {
+    background-color: yellow;
+  }
+  .active, li :hover {
+    background-color: yellow;
   }
 
 }
