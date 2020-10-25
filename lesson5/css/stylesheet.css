@@ -105,16 +105,48 @@ header img {
   text-align: center;
 }
 
-.homeimagen{
+.articleimagen{
   width:250px;
-  height:300px;
+  height:250px;
+  float: right;
+  margin: 10px;
 }
+
+.articlemain {
+  overflow:auto;
+}
+
+.dayforecast{
+  display: inline;
+}
+
+.forecastimagen{
+  width: 20%;
+  margin: -3px;
+  padding: 63px;
+}
+
+.heroimagen {
+  width: 100%;
+  height: 290px;
+}
+
 .navigation li a.active {
   background-color: yellow;
 }
 .active, li :hover {
   background-color: yellow;
 }
+
+.weathersummary {
+    display: block;
+    background-color: rgb(80 81 79);
+    border-style: none;
+    padding: 5px;
+    font-family: 'PT Serif', serif;
+}
+
+
 
 #banner  {
   background: linear-gradient(to right, #141517, #137491);
@@ -127,4 +159,20 @@ header img {
     line-height: 30px;
     margin: 10px 0px 30px 0px;
     display: none;
+}
+
+/* Footer */
+
+.contactsession{
+  overflow:auto;
+}
+
+.contactmap{
+  width: 300px;
+  float: left;
+}
+
+.socialmediaicon{
+  width: 20px;
+  margin: 10px;
 }

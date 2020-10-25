@@ -78,4 +78,13 @@
     background-color: yellow;
   }
 
+  .weathersummary {
+    position: absolute;
+    top: 270px;
+    left: 194px;
+    background-color: rgb(80 81 79);
+    box-shadow: 0px 0px 15px grey;
+    padding: 23px;
+}
+
 }
