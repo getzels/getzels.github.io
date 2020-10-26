@@ -1,111 +1,141 @@
 <html lang="en">
 
 <head>
-    <title>Getzels Wheater Site</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/stylesheet-medium.css">
-    <link rel="stylesheet" href="css/stylesheet-large.css">
+  <title>Getzels Wheater Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/stylesheet-medium.css">
+  <link rel="stylesheet" href="css/stylesheet-large.css">
 
-    <script src="./js/myJS.js"></script>
-    <script src="./js/setActive.js"></script>
-    
+  <script src="./js/myJS.js"></script>
+  <script src="./js/setActive.js"></script>
+  <script src="./js/windchill.js"></script>
+
 </head>
 
 <body>
 
-    <header>
-      <picture>
+  <header>
+    <picture>
       <img src="images/logo.png" alt="Getzels picture" style="float:left;width:75px;height:75px;">
+    </picture>
+    <section class="headings">
+      <h1>Getzels Wheater</h1>
+      <div class="motto">Life in the Clouds</div>
+    </section>
+  </header>
+
+  <main>
+    <nav>
+      <div id="banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+      </div>
+      <ul id="mainmenu" class="navigation">
+        <li><a onclick="showMenu()" href="#">☰</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <h2>Preston Idaho</h2>
+
+    <div>
+      <picture>
+        <img class="heroimagen" srcset="images/hero-small.jpeg 200w,
+                                        images/hero-medium.jpg 400w" sizes="(max-width: 200px) 200px,
+                                                                              (max-width: 400px) 200px,
+                                                                              1200px" 
+                            src="images/hero-large.jpg" 
+                            alt="weather summary">
       </picture>
-      <section class="headings">  
-        <h1>Getzels Wheater</h1>
-        <div class="motto">Life in the Clouds</div>
-        </section>
-    </header>
 
-    <main>
-        <nav>
-          <div id="banner">
-            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
-          </div>
-            <ul id="mainmenu" class="navigation">
-              <li><a onclick="showMenu()" href="#">☰</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a class="active" href="preston-5.html">Preston</a></li>
-              <li><a href="#">Soda Springs</a></li>
-              <li><a href="#">Fish Haven</a></li>
-              <li><a href="#">Storm Center</a></li>
-              <li><a href="#">Gallery</a></li>
-            </ul>
-           </nav>
+    </div>
 
-            <h2>Preston Idaho</h2>
+    <div class="weathersummary">
+      <h3>Weather Summary</h3>
+      <p>Currently: Rainy</p>
+      <p>High: <span id="temperature">55</span>℉</p>
+      <p>Wind Chill: <span id="windchill"></span>℉</p>
+      <p>Humidity: 30% </p>
+      <p>Wind: <span id="wind">20</span>mph</p>
+    </div>
 
-           <div>
-              <picture>
-                  <img class="heroimagen" src="images/imagen3.jpg" alt="weather summary">
-              <picture>
-              
-           </div>
+    <div>
+      <h2>5 day forecast</h2>
+      <div class="dayforecast">
+        <img class="forecastimagen" src="images/rain.png" alt="rain icon">
+        <img class="forecastimagen" src="images/storm.png" alt="storm icon">
+        <img class="forecastimagen" src="images/sun.png" alt="sun icon">
+        <img class="forecastimagen" src="images/cloudyday.png" alt="cloudyday icon">
+        <img class="forecastimagen" src="images/weather.png" alt="weather icon">
+      </div>
 
-           <div class="weathersummary">
-              <h3>Weather Summary</h3>
-              <p>Currently: Rainy</p>
-              <p>High: 45 ℉</p>
-              <p>Humidity: 30% </p>
-              <p>Wind: 20mph</p>
-          </div>
+    </div>
 
-           <div>
-            <h2>5 day forecast</h2>
-              <div class="dayforecast">
-                  <img class="forecastimagen" src="images/rain.png" alt="rain icon">
-                  <img class="forecastimagen" src="images/storm.png" alt="storm icon">
-                  <img class="forecastimagen" src="images/sun.png" alt="sun icon">
-                  <img class="forecastimagen" src="images/cloudyday.png" alt="cloudyday icon">
-                  <img class="forecastimagen" src="images/weather.png" alt="weather icon">
-              </div>
-              
-           </div>
+    <div class="articlemain">
+      <h2>article Title</h2>
+      <img class="articleimagen" src="images/articule.png" alt="article">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in vulputate quam. Proin vulputate erat ante, ut
+        faucibus eros laoreet et. Morbi tempor erat nec urna convallis cursus. Maecenas porttitor velit auctor mauris
+        pharetra tempus. Vivamus egestas, leo ut vulputate auctor, augue augue pharetra ex, ac ultrices justo nisl
+        consectetur nisi. Nulla interdum massa quis risus accumsan, non pulvinar odio tincidunt. Maecenas tempor, augue
+        at efficitur venenatis, turpis justo ultrices tellus, nec maximus augue mi non ante. Pellentesque fermentum ex
+        sed velit lacinia facilisis. Nam blandit lacus ipsum. Maecenas mollis, mi in feugiat commodo, urna enim aliquet
+        risus, vel ornare ante nunc vel nisi. Pellentesque purus dolor, sodales vitae fermentum eget, aliquam eget erat.
+      </p>
+      <p>
+        In elementum nibh ut quam rutrum rhoncus. Aenean egestas fermentum est pulvinar volutpat. Pellentesque commodo
+        nibh ac commodo pretium. Nunc convallis nec tellus sed condimentum. In consequat magna vel vestibulum tristique.
+        Phasellus id massa sit amet massa eleifend pretium. Vivamus id mauris lacus. Vestibulum eu turpis sed arcu
+        convallis consequat at consequat sem. Nunc in turpis massa. Quisque dignissim ornare nisi ac condimentum. Nunc
+        at ultrices lorem, et venenatis lacus. Nullam varius vel neque ut tincidunt.
+      </p>
+    </div>
+    <div class="contactsession">
+      <div class="contactmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1603598155083!5m2!1ses!2sdo"
+          width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div>
+        <h2>Contact Information</h2>
 
-           <div class="articlemain">
-            <h2>article Title</h2>
-            <img class="articleimagen" src="images/articule.png" alt="article">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in vulputate quam. Proin vulputate erat ante, ut faucibus eros laoreet et. Morbi tempor erat nec urna convallis cursus. Maecenas porttitor velit auctor mauris pharetra tempus. Vivamus egestas, leo ut vulputate auctor, augue augue pharetra ex, ac ultrices justo nisl consectetur nisi. Nulla interdum massa quis risus accumsan, non pulvinar odio tincidunt. Maecenas tempor, augue at efficitur venenatis, turpis justo ultrices tellus, nec maximus augue mi non ante. Pellentesque fermentum ex sed velit lacinia facilisis. Nam blandit lacus ipsum. Maecenas mollis, mi in feugiat commodo, urna enim aliquet risus, vel ornare ante nunc vel nisi. Pellentesque purus dolor, sodales vitae fermentum eget, aliquam eget erat.
-            </p>
-            <p>
-            In elementum nibh ut quam rutrum rhoncus. Aenean egestas fermentum est pulvinar volutpat. Pellentesque commodo nibh ac commodo pretium. Nunc convallis nec tellus sed condimentum. In consequat magna vel vestibulum tristique. Phasellus id massa sit amet massa eleifend pretium. Vivamus id mauris lacus. Vestibulum eu turpis sed arcu convallis consequat at consequat sem. Nunc in turpis massa. Quisque dignissim ornare nisi ac condimentum. Nunc at ultrices lorem, et venenatis lacus. Nullam varius vel neque ut tincidunt.
-            </p>
-           </div>
-            <div class="contactsession">
-            <div class="contactmap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1603598155083!5m2!1ses!2sdo" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <div>
-              <h2>Contact Information</h2>
+      </div>
+      <p>Dirrection</p>
+      <p>Email: admin@getzelsweather.com</p>
+      <p>Number: 809-555-9999</p>
+      <div class="socialmedia">
+        <a href="#"><img class="socialmediaicon" src="images/facebook.png" alt="facebook icon"></img></a>
+        <a href="#"><img class="socialmediaicon" src="images/youtube.png" alt="youtube icon"></img></a>
+        <a href="#"><img class="socialmediaicon" src="images/twitter.png" alt="twitter icon"></img></a>
+      </div>
+    </div>
 
-            </div>
-            <p>Dirrection</p>
-            <p>Email: admin@getzelsweather.com</p>
-            <p>Number: 809-555-9999</p>
-            <div class="socialmedia">
-              <a href="#"><img class="socialmediaicon" src="images/facebook.png" alt="facebook icon"></img></a>
-              <a href="#"><img class="socialmediaicon" src="images/youtube.png" alt="youtube icon"></img></a>
-              <a href="#"><img class="socialmediaicon" src="images/twitter.png" alt="twitter icon"></img></a>
-            </div>
-           </div>
+  </main>
 
-    </main>
-
-    <footer>
-        <p>&copy; <script>currentYear();</script>
-            Getzels N. De Los Santos | Dominican Republic | <div id="currentdate"></div>
-        </p>
-    </footer>
-    <script>currentDate();</script>
+  <footer>
+    <p>&copy;
+      <script>currentYear();</script>
+      Getzels N. De Los Santos | Dominican Republic |
+    <div id="currentdate"></div>
+    </p>
+  </footer>
+  <script>currentDate(); windChill();</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Arial', 'Helvetica', 'sans-serif']
+      }
+    });
+  </script>
 </body>
 
 </html>
