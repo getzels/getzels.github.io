@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (){
 const imgagesToLoad = document.querySelectorAll("[data-src]");
-
-console.log(imgagesToLoad);
-
 const loadImages = (image) => {
     image.setAttribute("src", image.getAttribute("data-src"));
     image.onload = () => {
@@ -21,7 +18,6 @@ const imgObserver = new IntersectionObserver((items, observer) => {
         }
     });
 }, imageOptions);
-
 
 imgagesToLoad.forEach((img) => {
     imgObserver.observe(img);
