@@ -1,7 +1,13 @@
+main{
+    text-align: center;
+    display: flex;
+}
+
 table{
-    width: 450px;
     font-family:  ubuntu, sans-serif;
     background-color: lightgray;
+    margin: 0 auto;
+    box-shadow: 8px 13px 20px 0px;
   }
   
   table tr:nth-child(even) {
@@ -15,7 +21,7 @@ table{
   thead tr th {
     text-align: center;
     background-color: #7fb9c2;
-    font-size: xxx-large;
+    font-size: x-large;
   }
   
   tfoot tr td {
