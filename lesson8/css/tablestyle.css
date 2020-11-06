@@ -1,0 +1,37 @@
+table{
+    width: 450px;
+    font-family:  ubuntu, sans-serif;
+    background-color: lightgray;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #e7f0ed;
+  }
+  
+  table tr:nth-child(odd) {
+   background-color: #e7ffed;
+  }
+  
+  thead tr th {
+    text-align: center;
+    background-color: #7fb9c2;
+    font-size: xxx-large;
+  }
+  
+  tfoot tr td {
+    text-align: center;
+    background-color: #7fb9c2;
+    padding: 5px;
+  }
+  
+  tbody tr td, td {
+    text-align: center; 
+    padding: 7px;
+  }
+  
+  tbody tr th, .highersale{
+    text-align: center; 
+    padding: 7px;
+    background-color: #628ca6;
+    color: white;
+  }
