@@ -52,8 +52,9 @@ nav {
 }
 
 img {
-  width: 300;
-  height: 350px;
+  width: 250px; 
+  height: 200px; 
+  margin: .5rem;
 }
 
 

@@ -31,17 +31,21 @@
 
   .gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 5px;
   }
   .gallery-image {
     padding: 10px;
     text-align: center;
   }
+
+  .gallery-image:hover {
+    box-shadow: 0 0 50px #333;
+  }
 }
 
   /* Larger viewports */
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     header img {
       width: 100%;
     }
@@ -72,12 +76,17 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
       padding: 5px;
     }
+
     .gallery-image {
       padding: 10px;
       text-align: center;
     }
 
-  }
+    .gallery-image:hover {
+      box-shadow: 0 0 50px #333;
+    }
+
+  } */
