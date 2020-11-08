@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Getzels Wheater Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/stylesheet-medium.css">
+  <link rel="stylesheet" href="css/stylesheet-large.css">
+
+  <script src="./js/myJS.js"></script>
+  <!-- <script src="./js/setActive.js"></script> -->
+
+</head>
+
+<body>
+
+  <header>
+    <figure>
+      <img src="../images/logo.png" alt="Getzels figure" style="float:left;width:75px;height:75px;">
+    </figure>
+    <section class="headings">
+      <h1>Getzels Wheater</h1>
+      <div class="motto">Life in the Clouds</div>
+    </section>
+  </header>
+
+  <main>
+    <nav>
+      <div id="banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+      </div>
+      <ul id="mainmenu" class="navigation">
+        <li><a onclick="showMenu()" href="#">☰</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="../lesson6/preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="thank">
+        <p>Thanks <span id="name"></span>, you information was submitted.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy;
+      <script>currentYear();setThankMessage();</script> Getzels N. De Los Santos | Dominican Republic
+    </p>
+  </footer>
+  <script>currentDate();</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Arial', 'Helvetica', 'sans-serif']
+      }
+    });
+  </script>
+</body>
+
+</html>
