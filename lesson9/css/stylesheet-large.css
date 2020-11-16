@@ -1,0 +1,63 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 64.063em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex   : 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+  }
+  .gallery-image {
+    padding: 10px;
+    text-align: center;
+  }
+
+  img:hover {
+    box-shadow: 0 0 30px #333;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #50514F;
+    padding         : 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;;
+    color     : white;
+    width     : 1024px;
+  }
+
+  main {
+    width       : 1024px;
+    margin-left : auto;
+    margin-right: auto;
+    /* text-align  : center */
+  }
+
+  .homeimagen{
+    width:250px;
+    height:300px;
+  }
+  .navigation li a.active {
+    background-color: yellow;
+  }
+  .active, li :hover {
+    background-color: yellow;
+  }
+}
