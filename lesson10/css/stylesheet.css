@@ -117,7 +117,9 @@ header img {
 }
 
 .dayforecast{
-  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .forecastimagen{
@@ -176,4 +178,59 @@ header img {
 .socialmediaicon{
   width: 20px;
   margin: 10px;
+}
+
+/* Media Query for small views */
+@media only screen and (max-width: 40.036em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex   : 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .homeimagen{
+    width:250px;
+    height:300px;
+  }
+  .navigation li a.active {
+    background-color: yellow;
+  }
+  .active, li :hover {
+    background-color: yellow;
+  }
+
+  .gallery-image:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  .info{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .towns {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .forecast{
+    display: none;
+  }
 }

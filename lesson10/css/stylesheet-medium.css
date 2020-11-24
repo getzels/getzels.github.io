@@ -28,36 +28,10 @@
   .active, li :hover {
     background-color: yellow;
   }
+
+  .forecast{
+    display: none;
+  }
 }
 
-  /* Larger viewports */
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    header img {
-      width: 100%;
-    }
-
-    .headings h1 {
-      font-size: 3rem;
-    }
-
-    .motto {
-      font-style    : italic;
-      letter-spacing: 1pt;
-      color         : #247BA0;
-      margin-left   : 20px;
-      font-size     : 2rem;
-
-    }
-
-    .homeimagen{
-      width:250px;
-      height:300px;
-    }
-    .navigation li a.active {
-      background-color: yellow;
-    }
-    .active, li :hover {
-      background-color: yellow;
-    }
-
-  }
+  

@@ -48,13 +48,20 @@
     grid-template-columns: 1fr;
   }
   
-  .towns {
+  .cards section {
     display: grid;
-    grid-template-columns: 1fr  1fr;
-  }
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    text-align: center;
+    line-height: 20px;
+}
   
   .cards{
     display: grid;
-    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .dayforecast{
+    display: none;
   }
 }
