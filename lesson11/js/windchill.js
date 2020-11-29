@@ -1,5 +1,16 @@
-const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
-const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
+function wheaterData(town,lat = 0,lon = 0) {
+
+  let weatherAPI;
+  let forecastAPI;
+
+  if(lat != 0){
+    weatherAPI = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
+    forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
+  }else{
+    weatherAPI = "https://api.openweathermap.org/data/2.5/weather?id=" + town + "&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
+    forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=" + town +"&appid=f9bb398c42a5e0db7ee5d8fa04b70bde&units=imperial"
+  }
+
 
 fetch(weatherAPI)
   .then(function (response) {
@@ -47,6 +58,8 @@ fetch(weatherAPI)
           document.querySelector('div.dayforecast').appendChild(forecastCard);
       }
   });  
+}
+
 
 
 function windChill(temp, wind) {

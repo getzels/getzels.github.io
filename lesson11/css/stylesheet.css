@@ -60,7 +60,7 @@ section{
 
 .info{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
 }
 
 .info_articles img{
@@ -69,10 +69,16 @@ section{
 }
 
 
-.towns img, .gallery img {
+.gallery img {
   width: 250px; 
   height: 200px; 
-  margin: -0.5rem;;
+  margin: -0.5rem;
+}
+
+.towns img {
+  width: 250px; 
+  height: 200px; 
+  margin: 2.5rem;
 }
 
 .towns {
