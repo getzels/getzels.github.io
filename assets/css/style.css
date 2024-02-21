@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  /* Styles for header */
+}
+
+aside {
+  grid-area: aside;
+  /* Styles for sidebar */
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-percentage {
+  background-color: #f44336;
+  height: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  grid-area: footer;
+  /* Styles for footer */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #portfolio {
+      grid-template-areas:
+          "header"
+          "aside"
+          "main"
+          "footer";
+      grid-template-columns: 1fr;
+  }
+}
+
+.profile-picture {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%; /* Gives the round shape */
+  margin-right: 20px; /* Space between image and text */
+  float: left; /* Aligns the image to the left of the text */
+}
+
